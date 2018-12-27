@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CV.css">
+        <title>Prafful</title>
+    </head>
+    <body>
+        <h1>Prafful Chetwani</h1>
+        <h3>prafful chetwani@gmail.com | www.linkedin.com/in/prafful-chetwani-39129a170</h3>
+        <img src= "E:\PICS\Mine\IMG_0279.JPG" width="200" height="300" align= "right">
+        <button class="accordion">Education</button>
+        <div class="panel">
+        <h4>B.Tech of Engineering in Information Technology</h4>
+        <p>Symbiosis Institute of Technology<br>2017-Present</p>
+        <h4>Diploma in Computer Science</h4>
+        <p>S.H.Mansukhani Institute of Technology<br> 2014-2017</p>
+        </div>
+
+        <button class="accordion">Skill Highlights</button>
+        <div class="panel">
+        <p><b>Languages:    </b>Java, C/C++, HTML5, CSS3, Jacascript, Jquery, PHP, XML</p>
+        <p><b>Tools:    </b>NetBeans, Eclipse, Visual Basic, Android Studio, Dev C++</p>
+        <p><b>Database & OS:    </b>MySQL, Mac, Windows, Unix</p>
+        </div>
+
+        <button class="accordion">Academic Projects</button>
+        <div class="panel">
+        <h4>Video Streaming</h4>
+        <p>A website for video uploading, downloading. It has features like user authentication, registration.Ther user can also like and comment the video. Database handler used was PHP.</p>
+        <h4>Character Animation</h4>
+        <p>
+            It displays string in different sizes and also gives zoom in and zoom out effects to the entered string. This mini project was built using java as primary language.
+        </p>
+        <h4>Emailing Web Protocol</h4>
+        <p>
+            The Web Protocol was used for registration of user, Updating of registered user and sending,receiving emai by one user to other user. This application was built using java as primary language.
+        </p>
+        <h4>Basic Website</h4>
+        <p>
+            The Website of a metalbox manufracturer industry. It is an static website used to display all he aspects of the Industry.
+            The GUI of website is built on HTML, CSS3 and bootstrap. This ecommerce website is in its developmetn phase.
+        </p>
+        <h4>Billing Software(Jewellery)</h4>
+        <p>
+            The software was capable of handling database of jewellery items and also had an billing feature as an main aspect of the project. This project based on visual basic.  
+        </p>
+        </div>
+
+        <button class="accordion">Certificates</button>
+        <div class="panel">
+        <h4>Oscillation 2016</h4>
+        <h4>Indian Android Camp</h4>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;    
+            for (i = 0; i < acc.length; i++) 
+            {
+                acc[i].addEventListener("click", function()
+                {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight)
+                    {
+                        panel.style.maxHeight = null;
+                    } 
+                    else 
+                    {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                });
+            }
+        </script>
+    </body>
+</html>
